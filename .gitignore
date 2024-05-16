@@ -1,0 +1,9 @@
+# Ignore the .git folder
+.git/
+
+# Ignore the __pycache__ directory
+__pycache__/
+
+# Ignore the venv folder
+venv/
+scorekeepingVENV/
