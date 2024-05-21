@@ -29,7 +29,7 @@ This is a python based api endpoint using flask. To run the server make sure you
     ```
 4. Run the server
     ```sh
-    python app.py
+    python scorekeeper.py
     ```
 
 ## API Endpoints
