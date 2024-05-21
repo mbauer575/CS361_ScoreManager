@@ -2,9 +2,10 @@ from flask import Flask, request, jsonify
 
 app = Flask(__name__)
 
-@app.route('/match_result', methods=['POST'])
+
+@app.route("/match_result", methods=["POST"])
 def match_result():
-    scores = request.json['scores']
+    scores = request.json["scores"]
     player1_set_wins = 0
     player2_set_wins = 0
 
@@ -18,9 +19,11 @@ def match_result():
         return jsonify(result=1)
     elif player2_set_wins > player1_set_wins:
         return jsonify(result=2)
+    elif player2_set_wins == player1_set_wins:
+        return jsonify(result=0)
     else:
-        return jsonify(error='Invalid scores')  
+        return jsonify(error="Invalid scores")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.run(debug=True)
