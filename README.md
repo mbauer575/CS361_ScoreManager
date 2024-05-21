@@ -18,6 +18,7 @@ This is a python based api endpoint using flask. To run the server make sure you
 2. Install the required packages I recommend using a virtual environment
     ```sh
     python -m venv venv
+    .\venv\Scripts\activate
     ```
     ```sh
     pip install -r requirements.txt
