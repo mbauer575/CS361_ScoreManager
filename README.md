@@ -13,7 +13,7 @@ This is a python based api endpoint using flask. To run the server make sure you
 
 1. Clone the repo
    ```sh
-   git clone 
+   git clone https://github.com/mbauer575/CS361_ScoreManager
     ```
 2. Install the required packages I recommend using a virtual environment
     ```sh
@@ -24,7 +24,7 @@ This is a python based api endpoint using flask. To run the server make sure you
     ```
 3. Run the tests
     ```sh
-    python -m unittest test_score_manager.py
+    python -m unittest test_scorekeeper.py
     ```
 4. Run the server
     ```sh
