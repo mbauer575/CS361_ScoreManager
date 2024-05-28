@@ -19,11 +19,9 @@ def match_result():
         return jsonify(result=1)
     elif player2_set_wins > player1_set_wins:
         return jsonify(result=2)
-    elif player2_set_wins == player1_set_wins:
-        return jsonify(result=0)
     else:
         return jsonify(error="Invalid scores")
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
